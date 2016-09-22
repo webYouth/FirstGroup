@@ -12,25 +12,38 @@
 	    <script src="js/swiper-3.3.1.min.js"></script>
 	    <script src="js/swiper.animate1.0.2.min.js"></script>
 	    <script src="js/car.js"></script>
+	    <script src="js/iscroll.js"></script>
 	</head>
 	<body>
-		<div id="box">
-			<header class="head">
-				<span class="back"></span>
-				<span class="title">购物车</span>
-				<span class="edi">编辑</span>
+		<!--<div id="box">-->
+			<header>
+				<section class="head">
+					<span class="back"></span>
+					<span class="title">购物车</span>
+					<span class="edi">编辑</span>
+				</section>
 			</header>
 			<div class="bar"></div>
-			<div class="icon"> 
+			<!--<div class="icon"> 
 				<i class="cat"></i>
 				<span class="car">小喵购物车</span >
-				<span class="num">共<b>0</b>件商品</span>
-			</div>
-			<div class="name">
-				<span class="select">&radic;</span>
+				<span class="num">共<b class="shuliang">0</b>件商品</span>
+			</div>-->
+			<!--<div class="name">
+				<span class="select check select_red">&radic;</span>
 				<p class="txt"><i class="pic"></i>小喵自营商品</p>
-			</div>
+			</div>-->
+			<div id="wrap">
 			<div class="wrapper">
+				<div class="icon"> 
+					<i class="cat"></i>
+					<span class="car">小喵购物车</span >
+					<span class="num">共<b class="shuliang">0</b>件商品</span>
+				</div>
+				<div class="name">
+					<span class="select check select_red">&radic;</span>
+					<p class="txt"><i class="pic"></i>小喵自营商品</p>
+				</div>
 				<!--<dl class="stores">
 					<span class="select"></span>
 					<dt><img src="img/good.jpg"/></dt>
@@ -60,18 +73,27 @@
 					</dd>
 				</dl>-->
 			</div>
+			</div>
 			<div id="title">
 				<div class="tit">
-					<span class="select">&radic;</span>
+					<span class="select check select_red">&radic;</span>
 					<p class="all">全选</p>	
 					<p class="heji">合计：
 						<span class="jiege">Y25.8</span>
 						<span class="jieshi">不含运费</span>
 					</p>
 					<div class="btn">结算(<span class="shuliang"></span>)</div>
+					<div class="tithide"></div>
 				</div>
+				
 			</div>
 			<div class="tip">喵亲，不能再少了哦</div>
-		</div>
+		<!--</div>-->
+		<script type="text/javascript">
+//			var myscroll = new IScroll("#wrap");
+//			var num = $('.wrapper').height()/40;
+//			alert(num/40)
+//			myscroll.maxScrollY = -parseInt(num);
+		</script>
 	</body>
 </html>
